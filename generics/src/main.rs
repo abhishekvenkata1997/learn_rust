@@ -1,0 +1,39 @@
+fn main() {
+    
+    let num_list = vec![34, 60, 28, 18, 54];
+
+    let char_list = vec!['a','b','c','d'];
+    let mut largest = get_largest_generic(num_list);
+
+    let mut largest_char = get_largest_generic(char_list);
+
+    println!("Largest number is {}  ",largest);
+    println!("Largest character is {}", largest_char);
+}
+
+//need to specify type
+fn get_largest(num_list: Vec<i32>) -> i32 {
+    
+    let mut largest = num_list[0];
+
+    for number in num_list {
+        if number > largest {
+            largest = number;
+        }
+    }
+    largest
+}
+
+//Using generics instead of single type characters
+//T(Type) is restricted to a character that has ordering and an ability to copy it elsewhere
+fn get_largest_generic<T: PartialOrd + Copy>(num_list: Vec<T>) -> T {
+
+    let mut largest = num_list[0];
+
+    for number in num_list {
+        if number > largest {
+            largest = number;
+        }
+    }
+    largest
+}
