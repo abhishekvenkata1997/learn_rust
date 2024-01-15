@@ -5,9 +5,9 @@ enum Option<T> {
 }
 
 
-fn genp_main() {
-    let integer = Option::Some(5);
-    let float = Option::Some(5.0);
+pub fn genp_main() {
+    let integer_val = Option::Some(5);
+    let float_val = Option::Some(5.0);
 
 }   
 

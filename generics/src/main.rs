@@ -20,6 +20,7 @@ fn main() {
     struct_main();
     enum_main();
     struct_main2();
+    genp_main();
 }
 
 
