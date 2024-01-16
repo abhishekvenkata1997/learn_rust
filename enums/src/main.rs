@@ -128,6 +128,7 @@ fn main() {
     }
 
     fn check_cond() {
+        //better to use match index 
         let some_value = Some(3);
         if let Some(3) = some_value {
             println!("Three");
