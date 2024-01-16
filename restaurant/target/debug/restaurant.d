@@ -1,0 +1,1 @@
+/Users/abhishekvenkata/Desktop/learn_rust/restaurant/target/debug/restaurant: /Users/abhishekvenkata/Desktop/learn_rust/restaurant/src/lib.rs /Users/abhishekvenkata/Desktop/learn_rust/restaurant/src/main.rs
