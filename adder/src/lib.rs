@@ -42,6 +42,11 @@ pub fn greeting(name: &str) -> String {
 
 }
 
+fn prints_and_returns_10(a: i32) -> i32 {
+    println!("I got the value {}",a);
+    10
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -110,4 +115,22 @@ mod tests {
         }
     }
 
+    #[test]
+    fn it_works2() {
+        assert_eq!(2+2,4);
+    }
+
+    #[test]
+    fn this_test_will_pass() {
+        let value = prints_and_returns_10(4);
+        assert_eq!(10,value);
+    }
+
+    #[test]
+    fn this_test_will_fail() {
+        let value = prints_and_returns_10(8);
+        assert_ne!(5,value);
+    }
+
+    
 }
