@@ -8,6 +8,7 @@ enum Message {
 
 //see what takes most space, space of enum is equal to the one that takes max size
 
+//Boxes are structs that implement the deref trait and the drop trait
 enum List{
     Cons(i32, Box<List>), //tuple that holds an integer and a List
     Nil
