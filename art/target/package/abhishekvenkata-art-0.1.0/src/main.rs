@@ -1,7 +1,7 @@
 
-use abhishekvenkata_art::PrimaryColor;
-use abhishekvenkata_art::SecondaryColor;
-use abhishekvenkata_art::mix;
+use art::PrimaryColor;
+use art::SecondaryColor;
+use art::mix;
 
 fn main() {
     
