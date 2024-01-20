@@ -34,6 +34,7 @@ fn main() {
                 width: 5,
                 height: 4,
                 label: String::from("Click me")
+                
             }),
             /*Box::new(text_field{
                 size: 5,
