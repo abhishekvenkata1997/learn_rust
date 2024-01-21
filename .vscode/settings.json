@@ -2,5 +2,6 @@
     "rust-analyzer.linkedProjects": [
         "./restaurant/Cargo.toml"
     ],
-    "CodeGPT.apiKey": "CodeGPT Plus Beta"
+    "CodeGPT.apiKey": "CodeGPT Plus Beta",
+    "liveServer.settings.port": 5501
 }
