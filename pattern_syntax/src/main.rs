@@ -174,6 +174,15 @@ fn main() {
     Some(n) if n==y => println!("Matched n= {}",n),
     _ => println!("Default  case, x = {:?}",x)
    }
+
+   enum Messager {
+    Hello {id: i32}
+   }
+
+   let msg = Messager::Hello{id: 5};
+
+   
+
 }
 
 // using _ as first function ignores the first parameter
