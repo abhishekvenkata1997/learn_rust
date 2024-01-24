@@ -12,7 +12,7 @@ fn main() {
 
     let pool = ThreadPool::new(4); //need to implement thread pool
 
-    for stream in listener.incoming() {
+    for stream in listener.incoming().take(2) {
         let stream = stream.unwrap();
 
         //handle_connection(stream);
